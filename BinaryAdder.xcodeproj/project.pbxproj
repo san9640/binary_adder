@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0BCC5816DE90F50066AAA8 /* binary_adder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */; };
 		5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB356A16DE8F2600349DC6 /* main.cpp */; };
 		5EFB356D16DE8F2600349DC6 /* BinaryAdder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binary_adder.cpp; path = ../src/binary_adder.cpp; sourceTree = "<group>"; };
 		5EFB356716DE8F2600349DC6 /* BinaryAdder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinaryAdder; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFB356A16DE8F2600349DC6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BinaryAdder.1; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		5EFB356916DE8F2600349DC6 /* BinaryAdder */ = {
 			isa = PBXGroup;
 			children = (
+				5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */,
 				5EFB356A16DE8F2600349DC6 /* main.cpp */,
 				5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */,
 			);
@@ -118,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */,
+				5E0BCC5816DE90F50066AAA8 /* binary_adder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +220,7 @@
 				5EFB357216DE8F2600349DC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
