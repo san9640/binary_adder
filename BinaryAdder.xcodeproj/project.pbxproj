@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E0BCC5816DE90F50066AAA8 /* binary_adder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */; };
+		5E0BCC5B16DE91DA0066AAA8 /* HalfAdder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */; };
+		5E0BCC5E16DE95500066AAA8 /* FullAdder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5D16DE95500066AAA8 /* FullAdder.cpp */; };
 		5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB356A16DE8F2600349DC6 /* main.cpp */; };
 		5EFB356D16DE8F2600349DC6 /* BinaryAdder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = binary_adder.cpp; path = ../src/binary_adder.cpp; sourceTree = "<group>"; };
+		5E0BCC5916DE91C60066AAA8 /* HalfAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfAdder.h; sourceTree = SOURCE_ROOT; };
+		5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HalfAdder.cpp; sourceTree = SOURCE_ROOT; };
+		5E0BCC5C16DE95420066AAA8 /* FullAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullAdder.h; sourceTree = "<group>"; };
+		5E0BCC5D16DE95500066AAA8 /* FullAdder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FullAdder.cpp; sourceTree = "<group>"; };
 		5EFB356716DE8F2600349DC6 /* BinaryAdder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinaryAdder; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFB356A16DE8F2600349DC6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BinaryAdder.1; sourceTree = "<group>"; };
@@ -63,8 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				5E0BCC5416DE90F50066AAA8 /* binary_adder.cpp */,
+				5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */,
+				5E0BCC5916DE91C60066AAA8 /* HalfAdder.h */,
 				5EFB356A16DE8F2600349DC6 /* main.cpp */,
 				5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */,
+				5E0BCC5C16DE95420066AAA8 /* FullAdder.h */,
+				5E0BCC5D16DE95500066AAA8 /* FullAdder.cpp */,
 			);
 			path = BinaryAdder;
 			sourceTree = "<group>";
@@ -122,6 +132,8 @@
 			files = (
 				5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */,
 				5E0BCC5816DE90F50066AAA8 /* binary_adder.cpp in Sources */,
+				5E0BCC5B16DE91DA0066AAA8 /* HalfAdder.cpp in Sources */,
+				5E0BCC5E16DE95500066AAA8 /* FullAdder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

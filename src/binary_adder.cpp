@@ -13,23 +13,6 @@ int AddNumbers(int inputA, int inputB, int totalBits);
 int MultiplyNumbers(int inputA, int inputB, int totalBits);
 
 /*
- * this class is for the creation of half adders
- */
-class HalfAdder {
-
-public:
-	bool sum, carry;
-
-	void half_add(bool a, bool b) {
-		// set the object's sum and carry values
-		sum = a ^ b;
-		carry = a & b;
-
-	}
-
-};
-
-/*
  * this class allows creation of full adders, requires the half adder class
  * for creation of the two half adders
  */
