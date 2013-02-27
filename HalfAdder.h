@@ -5,6 +5,8 @@
 //  Created by Joel Clark on 27/02/2013.
 //  Copyright (c) 2013 Joel Clark. All rights reserved.
 //
+//  This header file defines the interface for the HalfAdder class
+//
 
 #ifndef BinaryAdder_BinaryAdder_h
 #define BinaryAdder_BinaryAdder_h

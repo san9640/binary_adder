@@ -5,6 +5,8 @@
 //  Created by Joel Clark on 27/02/2013.
 //  Copyright (c) 2013 Joel Clark. All rights reserved.
 //
+//  This cpp file contains the implementation for the HalfAdder class
+//
 
 #include "HalfAdder.h"
 
