@@ -9,6 +9,8 @@
 #include <vector>
 #include "FullAdder.h"
 
+const int ASCII_Y = 121;
+
 int TwosCompliment(int value);
 int AddNumbers(int inputA, int inputB, int totalBits);
 int MultiplyNumbers(int inputA, int inputB, int totalBits);
@@ -28,7 +30,7 @@ int main() {
 	std::cin >> subtract;
 	std::cout << std::endl;
     
-	if (subtract == 121) {
+	if (subtract == ASCII_Y) {
 		inputB = TwosCompliment(inputB);
 	}
     
@@ -36,7 +38,7 @@ int main() {
     
 	std::cout << inputA << " + " << inputB << " is: " << finalValue << std::endl;
     
-	if (subtract == 121) {
+	if (subtract == ASCII_Y) {
 		inputB = TwosCompliment(inputB);
 	}
     
