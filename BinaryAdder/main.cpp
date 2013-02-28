@@ -22,7 +22,7 @@ void test();
 
 int main() {
     
-    test();
+    //test();
     
 	char totalBits = 32;
 	char subtract = 0;

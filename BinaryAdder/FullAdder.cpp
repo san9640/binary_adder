@@ -10,6 +10,7 @@
 
 #include "FullAdder.h"
 #include "HalfAdder.h"
+#include "OrGate.h"
 
 namespace binaryadder {
     
@@ -28,7 +29,7 @@ namespace binaryadder {
         
 		// output logic stage
 		sum_ = halfAdders[1].getSum();
-		carry_ = halfAdders[0].getCarry() | halfAdders[1].getCarry();
+        carry_ = gates::OrGate(halfAdders[0].getCarry(), halfAdders[1].getCarry()).getOutput();
 
     }
     

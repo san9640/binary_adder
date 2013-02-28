@@ -9,6 +9,8 @@
 //
 
 #include "HalfAdder.h"
+#include "XorGate.h"
+#include "AndGate.h"
 
 namespace binaryadder
 {
@@ -19,8 +21,8 @@ namespace binaryadder
     
     void HalfAdder::halfAdd(bool inputA, bool inputB) {
         // set the object's sum and carry values
-		sum_ = inputA ^ inputB;
-		carry_ = inputA & inputB;
+        sum_ = gates::XorGate(inputA, inputB).getOutput();
+        carry_ = gates::AndGate(inputA, inputB).getOutput();
     }
     
     bool HalfAdder::getCarry() {
