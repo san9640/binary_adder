@@ -16,7 +16,7 @@ namespace gates
     }
     
     OrGate::OrGate(bool inputA, bool inputB) : LogicGate(inputA, inputB) {
-        
+        OrGate::setOutput();
     }
     
     void OrGate::setOutput() {

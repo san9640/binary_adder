@@ -20,7 +20,7 @@ namespace gates
     
     
     XorGate::XorGate(bool inputA, bool inputB) : LogicGate(inputA, inputB) {
-        
+        XorGate::setOutput();
     }
     
     

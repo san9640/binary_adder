@@ -17,7 +17,7 @@ namespace gates {
         LogicGate(bool inputA, bool inputB);
         bool getOutput();
         void setOutput(bool outputValue);
-        void setInput(bool inputA, bool inputB);
+        void setInputs(bool inputA, bool inputB);
         void setInputA(bool inputA);
         void setInputB(bool inputB);
         bool getInputA();

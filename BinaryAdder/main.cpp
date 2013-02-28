@@ -146,7 +146,7 @@ void test() {
     std::cout << testGate6.getOutput() << std::endl;
     
     std::cout << "setting A = 1, B = 1 output should be 1" << std::endl;
-    gates::AndGate testGate7(true, false);
+    gates::AndGate testGate7(true, true);
     std::cout << testGate7.getOutput() << std::endl;
     
     std::cout << "setting A = 0, B = 1 output should be 0" << std::endl;

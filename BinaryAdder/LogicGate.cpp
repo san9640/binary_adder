@@ -39,7 +39,7 @@ namespace gates
     
     
     
-    void LogicGate::setInput(bool inputA, bool inputB) {
+    void LogicGate::setInputs(bool inputA, bool inputB) {
         inputA_ = inputA;
         inputB_ = inputB;
         LogicGate::setOutput();
