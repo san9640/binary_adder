@@ -24,33 +24,33 @@ int main() {
     
     test();
     
-//	char totalBits = 32;
-//	char subtract = 0;
-//	int finalValue = 0;
-//	int inputA, inputB;
-//    
-//    std::cout << "enter the first number (A) and second number (B)" << std::endl << "space separated" << std::endl;
-//    
-//	std::cin >> inputA >> inputB;
-//    
-//	std::cout << "do you want to subtract B from A?" << std::endl << "y/n >> ";
-//	std::cin >> subtract;
-//	std::cout << std::endl;
-//    
-//	if (subtract == ASCII_Y) {
-//		inputB = TwosCompliment(inputB);
-//	}
-//    
-//	finalValue = AddNumbers(inputA, inputB, totalBits);
-//    
-//	std::cout << inputA << " + " << inputB << " is: " << finalValue << std::endl;
-//    
-//	if (subtract == ASCII_Y) {
-//		inputB = TwosCompliment(inputB);
-//	}
-//    
-//	finalValue = MultiplyNumbers(inputA, inputB, totalBits);
-//	std::cout << inputA << " * " << inputB << " is: " << finalValue << std::endl;
+	char totalBits = 32;
+	char subtract = 0;
+	int finalValue = 0;
+	int inputA, inputB;
+    
+    std::cout << "enter the first number (A) and second number (B)" << std::endl << "space separated" << std::endl;
+    
+	std::cin >> inputA >> inputB;
+    
+	std::cout << "do you want to subtract B from A?" << std::endl << "y/n >> ";
+	std::cin >> subtract;
+	std::cout << std::endl;
+    
+	if (subtract == ASCII_Y) {
+		inputB = TwosCompliment(inputB);
+	}
+    
+	finalValue = AddNumbers(inputA, inputB, totalBits);
+    
+	std::cout << inputA << " + " << inputB << " is: " << finalValue << std::endl;
+    
+	if (subtract == ASCII_Y) {
+		inputB = TwosCompliment(inputB);
+	}
+    
+	finalValue = MultiplyNumbers(inputA, inputB, totalBits);
+	std::cout << inputA << " * " << inputB << " is: " << finalValue << std::endl;
     
 	return 0;
 }
@@ -120,18 +120,22 @@ void test() {
     std::cout << "testing XOR class..." << std::endl;
     std::cout << "setting A = 0, B = 0 output should be 0" << std::endl;
     gates::XorGate testGate(false, false);
+    testGate.setInputs(false, false);
     std::cout << testGate.getOutput() << std::endl;
     
     std::cout << "setting A = 1, B = 0 output should be 1" << std::endl;
-    gates::XorGate testGate2(true, false);
+    gates::XorGate testGate2(false, false);
+    testGate2.setInputs(true, false);
     std::cout << testGate2.getOutput() << std::endl;
     
     std::cout << "setting A = 0, B = 1 output should be 1" << std::endl;
-    gates::XorGate testGate3(false, true);
+    gates::XorGate testGate3(false, false);
+    testGate3.setInputs(false, true);
     std::cout << testGate3.getOutput() << std::endl;
     
     std::cout << "setting A = 1, B = 1 output shold be 0" << std::endl;
-    gates::XorGate testGate4(true, true);
+    gates::XorGate testGate4(false, false);
+    testGate4.setInputs(true, true);
     std::cout << testGate4.getOutput() << std::endl;
     
     std::cout << std::endl;
