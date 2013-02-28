@@ -23,6 +23,10 @@ namespace gates
         XorGate::setOutput();
     }
     
+    void XorGate::setInputs(bool inputA, bool inputB) {
+        LogicGate::setInputs(inputA, inputB);
+        XorGate::setOutput();
+    }
     
     
     void XorGate::setOutput() {

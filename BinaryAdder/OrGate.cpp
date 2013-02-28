@@ -24,4 +24,9 @@ namespace gates
         LogicGate::setOutput(calculatedOutput);
     }
     
+    void OrGate::setInputs(bool inputA, bool inputB) {
+        LogicGate::setInputs(inputA, inputB);
+        OrGate::setOutput();
+    }
+    
 }

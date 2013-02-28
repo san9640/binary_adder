@@ -19,6 +19,11 @@ namespace gates
         AndGate::setOutput();
     }
     
+    void AndGate::setInputs(bool inputA, bool inputB) {
+        LogicGate::setInputs(inputA, inputB);
+        AndGate::setOutput();
+    }
+    
     void AndGate::setOutput() {
         bool calculatedOutput = LogicGate::getInputA() & LogicGate::getInputB();
         LogicGate::setOutput(calculatedOutput);

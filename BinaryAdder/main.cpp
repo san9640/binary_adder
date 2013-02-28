@@ -137,9 +137,9 @@ void test() {
     std::cout << std::endl;
     
     std::cout << "testing AND class..." << std::endl;
-    std::cout << "setting A = 0, B = 0 output should be 0" << std::endl;
+    std::cout << "setting A = 0, B = 0 output should be 0, 0" << std::endl;
     gates::AndGate testGate5(false, false);
-    std::cout << testGate5.getOutput() << std::endl;
+    std::cout << testGate5.getOutput() << ", " << std::endl;
     
     std::cout << "setting A = 1, B = 0 output should be 0" << std::endl;
     gates::AndGate testGate6(true, false);

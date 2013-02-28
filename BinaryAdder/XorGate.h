@@ -18,6 +18,7 @@ namespace gates
     public:
         XorGate();
         XorGate(bool inputA, bool inputB);
+        void setInputs(bool inputA, bool inputB);
     private:
         void setOutput();
     };
