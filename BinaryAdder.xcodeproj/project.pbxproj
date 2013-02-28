@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5E0BCC5B16DE91DA0066AAA8 /* HalfAdder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */; };
 		5E0BCC5E16DE95500066AAA8 /* FullAdder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BCC5D16DE95500066AAA8 /* FullAdder.cpp */; };
+		5ED654F016DEBD7D0033262E /* LogicGate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED654EE16DEBD7D0033262E /* LogicGate.cpp */; };
+		5ED654F416DEC1870033262E /* XorGate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED654F216DEC1870033262E /* XorGate.cpp */; };
+		5ED654F716DED31A0033262E /* AndGate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED654F516DED31A0033262E /* AndGate.cpp */; };
+		5ED654FA16DEE45F0033262E /* OrGate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED654F816DEE45F0033262E /* OrGate.cpp */; };
 		5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EFB356A16DE8F2600349DC6 /* main.cpp */; };
 		5EFB356D16DE8F2600349DC6 /* BinaryAdder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */; };
 /* End PBXBuildFile section */
@@ -31,6 +35,14 @@
 		5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HalfAdder.cpp; sourceTree = SOURCE_ROOT; };
 		5E0BCC5C16DE95420066AAA8 /* FullAdder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullAdder.h; sourceTree = "<group>"; };
 		5E0BCC5D16DE95500066AAA8 /* FullAdder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FullAdder.cpp; sourceTree = "<group>"; };
+		5ED654EE16DEBD7D0033262E /* LogicGate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogicGate.cpp; sourceTree = "<group>"; };
+		5ED654EF16DEBD7D0033262E /* LogicGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicGate.h; sourceTree = "<group>"; };
+		5ED654F216DEC1870033262E /* XorGate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XorGate.cpp; sourceTree = "<group>"; };
+		5ED654F316DEC1870033262E /* XorGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XorGate.h; sourceTree = "<group>"; };
+		5ED654F516DED31A0033262E /* AndGate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AndGate.cpp; sourceTree = "<group>"; };
+		5ED654F616DED31A0033262E /* AndGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndGate.h; sourceTree = "<group>"; };
+		5ED654F816DEE45F0033262E /* OrGate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrGate.cpp; sourceTree = "<group>"; };
+		5ED654F916DEE45F0033262E /* OrGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrGate.h; sourceTree = "<group>"; };
 		5EFB356716DE8F2600349DC6 /* BinaryAdder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinaryAdder; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFB356A16DE8F2600349DC6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5EFB356C16DE8F2600349DC6 /* BinaryAdder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BinaryAdder.1; sourceTree = "<group>"; };
@@ -47,6 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ED654F116DEC1500033262E /* Gates */ = {
+			isa = PBXGroup;
+			children = (
+				5ED654EE16DEBD7D0033262E /* LogicGate.cpp */,
+				5ED654EF16DEBD7D0033262E /* LogicGate.h */,
+				5ED654F216DEC1870033262E /* XorGate.cpp */,
+				5ED654F316DEC1870033262E /* XorGate.h */,
+				5ED654F516DED31A0033262E /* AndGate.cpp */,
+				5ED654F616DED31A0033262E /* AndGate.h */,
+				5ED654F816DEE45F0033262E /* OrGate.cpp */,
+				5ED654F916DEE45F0033262E /* OrGate.h */,
+			);
+			name = Gates;
+			sourceTree = "<group>";
+		};
 		5EFB355E16DE8F2600349DC6 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +93,7 @@
 		5EFB356916DE8F2600349DC6 /* BinaryAdder */ = {
 			isa = PBXGroup;
 			children = (
+				5ED654F116DEC1500033262E /* Gates */,
 				5E0BCC5A16DE91DA0066AAA8 /* HalfAdder.cpp */,
 				5E0BCC5916DE91C60066AAA8 /* HalfAdder.h */,
 				5EFB356A16DE8F2600349DC6 /* main.cpp */,
@@ -130,6 +158,10 @@
 				5EFB356B16DE8F2600349DC6 /* main.cpp in Sources */,
 				5E0BCC5B16DE91DA0066AAA8 /* HalfAdder.cpp in Sources */,
 				5E0BCC5E16DE95500066AAA8 /* FullAdder.cpp in Sources */,
+				5ED654F016DEBD7D0033262E /* LogicGate.cpp in Sources */,
+				5ED654F416DEC1870033262E /* XorGate.cpp in Sources */,
+				5ED654F716DED31A0033262E /* AndGate.cpp in Sources */,
+				5ED654FA16DEE45F0033262E /* OrGate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
